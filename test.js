@@ -20,3 +20,21 @@ test(({same, end}) => {
 
   end()
 })
+
+test(({same, end}) => {
+  same(
+    takeFirst(2)("abc"),
+    "ab"
+  )
+
+  end()
+})
+
+test(({same, end}) => {
+  same(
+    takeFirst(1)("abc"),
+    "a"
+  )
+
+  end()
+})
