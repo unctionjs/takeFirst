@@ -1,6 +1,6 @@
 {
   "name": "@unction/takefirst",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "Returns the first N of a list of ordered values",
   "keywords": [
     "unction",
