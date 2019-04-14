@@ -1,40 +1,40 @@
 /* eslint-disable no-magic-numbers */
-import {test} from "tap"
+import {test} from "tap";
 
-import takeFirst from "./index"
+import takeFirst from "./index";
 
 test(({same, end}) => {
   same(
     takeFirst(2)(["a", "b", "c"]),
     ["a", "b"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeFirst(1)(["a", "b", "c"]),
     ["a"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeFirst(2)("abc"),
     "ab"
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     takeFirst(1)("abc"),
     "a"
-  )
+  );
 
-  end()
-})
+  end();
+});
