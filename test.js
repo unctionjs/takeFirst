@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 import {test} from "tap";
 
-import takeFirst from "./index";
+import takeFirst from "./";
 
 test(({same, end}) => {
   same(
