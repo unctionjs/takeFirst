@@ -1,18 +1,18 @@
 /* eslint-disable no-magic-numbers */
 import takeFirst from "./index";
 
-test(() => {
+test("works", () => {
   expect(takeFirst(2)(["a", "b", "c"])).toEqual(["a", "b"]);
 });
 
-test(() => {
+test("works", () => {
   expect(takeFirst(1)(["a", "b", "c"])).toEqual(["a"]);
 });
 
-test(() => {
+test("works", () => {
   expect(takeFirst(2)("abc")).toEqual("ab");
 });
 
-test(() => {
+test("works", () => {
   expect(takeFirst(1)("abc")).toEqual("a");
 });
